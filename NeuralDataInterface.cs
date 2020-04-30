@@ -28,8 +28,7 @@ namespace DesignPatterns.GangOfFour.Structural.Adapter
         {
             // Non-adapted alien neural interface
             var tholianNeuralInterface = new TholianNeuralInterfaceClass();
-            //tholianNeuralInterface.Connect();
-
+           
             // Uses the adapter class, AdaptedDataNeuralInterface, to enable communication between 
             // Commander Data and the incompatible, Tholian neural interface.
             var cerebralCortexPatch = new AdaptedDataNeuralInterface(InterfaceComponent.CerebralCortexPatch);
@@ -242,16 +241,7 @@ namespace DesignPatterns.GangOfFour.Structural.Adapter
             return 0d;
         }
 
-        //public float GetConnectionDuration(InterfaceComponent interfaceComponent)
-        //{
-        //    switch (interfaceComponent)
-        //    {
-        //        case InterfaceComponent.CerebralCortexPatch: return 6000.33f;
-        //        case InterfaceComponent.TemporalInterfacePatch: return 9345.878f;
-        //        case InterfaceComponent.FrontalInterfacePatch: return 9589.336f;
-        //    }
-        //    return 0f;
-        //}
+        
     }
 
 
